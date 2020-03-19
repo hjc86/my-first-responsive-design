@@ -27,8 +27,22 @@ nav{
     justify-content: space-evenly; 
 }
 
+
 a{
-    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}
+/* a:link{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}*/
+
+
+
+a:hover{
+    background-color:black;
+    color:white;
 }
 
 body{
@@ -84,9 +98,10 @@ footer{
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
     visibility: hidden;
-    opacity: 0;
     text-align: center;
-    /* transition effect. not necessary */
+
+    /*hover effect*/
+    opacity: 0;
     transition: opacity .2s, visibility .2s;
   }
 
