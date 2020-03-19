@@ -31,8 +31,6 @@ a{
     border: 2px solid black;
 }
 
-
-
 body{
     /* background-color: floralwhite; */
     background-color: white
@@ -51,7 +49,7 @@ main{
 
 article{
     display: flex;
-    /* border: 5px solid black; */
+
 }
 
 section{
@@ -59,14 +57,6 @@ section{
     flex-direction: row;
 }
 
-
-
-
-/* nav ul{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-} */
 
 #recipe_img{
     height: 400px;
@@ -106,6 +96,5 @@ section:hover .img_description{
 }
 
 p{
-    margin:50% auto;
-
+    margin:auto;
 }
