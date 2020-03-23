@@ -4,7 +4,6 @@ article{
     flex-wrap: wrap;
 }
 
-
 header{
     display: flex;
     flex-wrap: wrap;
@@ -27,23 +26,21 @@ nav{
     justify-content: space-evenly; 
 }
 
-
-a{
-    color: black;
-    text-decoration: none;
+#header_title, a{
+    font-family: 'Parisienne', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'IBM Plex Mono', monospace;
 }
-/* a:link{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-}*/
+
+#header_title{
+    text-align: center;
+}
+
 
 a{
     text-decoration: none;
     color: black;
     position: relative;
-
-
 }
 
 a::after{
@@ -64,24 +61,18 @@ a:hover::after{
     transform: scaleX(1)
 }
 
-
-/* a:hover{
-    background-color:black;
-    color:white;
-} */
-
 body{
-    /* background-color: floralwhite; */
-    background-color: white
+    /* width: 95%; */
+    margin: auto 2% auto;
+    background-color: white;
 }
 
 main{
     display: flex;
-    /* background-color: beige; */
     background-color: floralwhite;
     flex-wrap: wrap;
     margin: auto;
-    padding: 10% 10%;
+    padding: 2% 2%;
     justify-content: center;
     align-content: space-around;
 }
@@ -96,29 +87,18 @@ section{
     flex-direction: row;
 }
 
-
 #recipe_img{
+    /* max-width: 100%; */
     height: 400px;
     width: 400px;
     border-radius: 100%;
-}
-
-#homepage_img{
-    width: 100%;
-}
-
-footer{
-    text-align: right;
-}
-
-#fft{
-    font-family: fantasy;
 }
 
 .img_description {
     position: absolute;
     height: 400px;
     width: 400px;
+    /* max-width: 100%; */
     border-radius: 100%;
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
@@ -129,6 +109,27 @@ footer{
     opacity: 0;
     transition: opacity .2s, visibility .2s;
   }
+
+img{
+    display:flex;
+    max-width:100%;
+}
+
+#homepage_img{
+    display: flex; 
+    /* max-width:100%; */
+       /* width: 50%; */
+}
+
+footer{
+    text-align: right;
+}
+
+#fft{
+    font-family: fantasy;
+}
+
+
 
 section:hover .img_description{
     visibility: visible;
